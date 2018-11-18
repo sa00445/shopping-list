@@ -1,29 +1,32 @@
-<h1>Main#shop</h1>
-<p>Find me in app/views/main/shop.html.erb</p>
-<section id="dataEntry">
-    <h1>Add a new shopping item</h1>
+<div class="container">
+  <h1>Shopping List</h1>
+
+  <section class="entry-area" id="dataEntry">
+    <h2>Add a new shopping item</h2>
     <ul>
-        <li>
-            <label for="item">Details:</label>
-            <input type="text" name="item" id="item" placeholder="Enter details here" required>
-        </li>
-        <li>
-            <button id="submitItem">Add Item</button>
-        </li>
+      <li>
+        <div class="form-group">
+          <label for="item">Details:</label>
+          <input type="text" name="item" id="item" placeholder="Enter details here" required>
+        </div>
+      </li>
+      <li>
+        <button class="btn btn-primary" id="submitItem">Add Item</button>
+      </li>
     </ul>
-</section>
-<section id="shoppingList">
-    <h1>The story so far</h1>
-    <table summary="This table lists all the shopping items that have been collected together by all those using this application.">
-    <caption>Shopping items together with the person who wants them.</caption>
-    <thead>
+  </section>
+  <section id="shoppingList">
+    <h2>The story so far</h2>
+    <table class="table" summary="This table lists all the shopping items that have been collected together by all those using this application.">
+      <caption>Shopping items together with the person who wants them.</caption>
+      <thead>
         <tr>
-            <th scope="col">Required by</th>
-            <th scope="col">Description</th>
+          <th scope="col">Required by</th>
+          <th scope="col">Description</th>
         </tr>
-    </thead>
-    <tbody id="itemList">
-    </tbody>
+      </thead>
+      <tbody id="itemList">
+      </tbody>
     </table>
-    </section>
-    
+  </section>
+</div>

@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require bootstrap-sprockets
 
 function generate_key(){
     var number = Math.random();
@@ -38,7 +39,7 @@ function add_item_to_list(key, namedItem) {
 $(function(){
     var userName = prompt("Please enter your name");
     sessionStorage.setItem('userName',userName);
-    
+
     for (index = 0; index < localStorage.length; index++) {
         var key = localStorage.key(index);
         var namedItem = JSON.parse(localStorage.getItem(key));

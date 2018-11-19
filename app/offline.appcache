@@ -1,0 +1,10 @@
+CACHE MANIFEST
+
+CACHE:
+views/layouts/application.html.erb
+views/main/about.html.erb
+views/main/home.html.erb
+views/main/shop.html.erb
+assets/javascripts/application.js
+assets/stylesheets/application.scss
+Geolocation.html
